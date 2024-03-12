@@ -1,0 +1,86 @@
+/*Este archivo añade mas estilos a paginas sobremi.html y contacto.html*/
+
+main{
+    width: 500px;
+    margin: auto; /*Esto es para que despues de haberle puesto un ancho fijo, hace el
+    parrafo siga estando en el centro.*/
+    text-align: center;
+    text-justify: auto;
+    color: #B12AE1;
+    font-size: 25px;
+    -webkit-text-stroke: 0.4px #9323BB; /* Ancho y color del contorno para el borde*/
+    
+}
+
+main p{
+    text-align: center;
+}
+
+
+
+/*ESTILOS CONTACTO*/
+.formulario { /*Afecta el area que ocupa el formulario*/
+    background: #6C00AB;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*Intenta separa los elementos que estan 
+    en una fila en dos.*/
+    margin-bottom: 25px;
+}
+
+.formulario a{ /*Afecta a la lista iconos.*/
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #00B1D1;
+    font-weight: 700;
+}
+
+.formulario a i{ /*Afecta a los iconos.*/
+    color: #00CBD2;
+    margin-right: 10px;
+}
+
+.formulario form .campo, textarea{ /*Afecta a las etiquetas input.*/
+    width: 100%;
+    max-width: 500px;
+    min-width: 500px; /*Con estos valores se va jugando con el ancho de las cajas
+    en caso de que se desborde.*/
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 2px solid #00B1D1;
+    border-radius: 10px; /*Para redondear las esquinas de las cajas.*/
+    outline: 0px;
+    margin-top: 10px;
+}
+
+.formulario form textarea{ /*form y textarea son selectores elementales.*/
+    max-height: 150px;
+    min-height: 140px;
+}
+
+.formulario .btn-enviar{ /*formulario y btn-enviar son selectores de tipo clase.*/
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #00B1D1;
+    color: black;
+    border-radius: 5px; /*Para redondear las esquinas del boton.*/
+    cursor: pointer; /*Es para que el cursos cambie de forma a una mano.*/
+    transition: all300ms ease; /*Creo que es el tiempo que se demora el curso en
+    cambiar de forma.*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.formulario .btn-enviar:hover{ /*Agregamos un efecto hover al boton enviar.*/
+    color: white;
+}

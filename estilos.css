@@ -1,0 +1,145 @@
+.cuerpo {
+    background: black;
+}
+
+
+.lista-principal {
+    /*Afecta al nav.*/
+
+    background: #8E44AD;
+}
+
+
+
+.lista-principal ul {
+    /*Afecta al ul.*/
+    list-style: none;
+    /*Quita los puntos de la lista*/
+    text-align: center;
+    /*Esto es para que se alinie el texto como en word*/
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+
+.lista-principal a:hover { /*Creamos esta seudoclase y con el uso del hover hacemos que 
+    cuando pase el mouse por cada uno de los elementos. Este cambie de color.*/
+    color: white;
+}
+
+
+.lista-principal li {
+    /*Afecta a la lista.*/
+    display: inline-block;
+    margin-right: 50px;
+    /* add spacing between items */
+
+
+}
+
+.lista-principal a {
+    /*Afecta a cada elemento de la lista.*/
+    text-decoration: none;
+    /*Quita los subrayados de los links*/
+    color: black;
+    font-size: 25px;
+
+}
+
+
+
+body { /*No lleva punto porque se trata de un selector de elemento*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el mínimo alto del contenedor del cuerpo al 100% de la altura de la ventana gráfica */
+}
+
+
+.parrafo {
+    color: #B659FF;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*Clases para el pie*/
+.pie {
+    background: #8E44AD;
+    display: flex;
+    justify-content: space-around;
+    /*Se utiliza un contenedor principal con la propiedad CSS display: flex; y justify-content: space-around;. 
+    Esto distribuirá las tres listas horizontalmente con espacio equitativo entre ellas.*/
+
+    margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+}
+
+.pie ul {
+    list-style: none; /*Quita los puntos de la lista*/
+}
+
+.pie a {
+    text-decoration: none; /*Quita los subrayados de los links*/
+    text-align: center;
+    color: black;
+    font-style: solid;
+    font-weight: 600;
+}
+
+.third {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    /*Cada lista individual tiene la clase list y tiene un estilo que elimina los márgenes y el estilo de viñetas (puntos o números) 
+    predeterminado de las listas (list-style: none; padding: 0; margin: 0;).*/
+}
+
+
+.lista-iconos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    /*Cada lista individual tiene la clase list y tiene un estilo que elimina los márgenes y el estilo de viñetas (puntos o números) 
+    predeterminado de las listas (list-style: none; padding: 0; margin: 0;).*/
+
+    
+}
+
+.lista-iconos li {
+    /*Hace que cada uno de los elementos de la lista se distribuya de manera horizontal*/
+    display: inline-block;
+    margin-right: 20px; /*Separacion entre los iconos*/
+    transition: all ease 500ms; /*Hace que la animacion de cada uno de los iconos sea mas suave.*/
+
+}
+
+.lista-iconos a { /*Afecta a cada icono*/
+    font-size: 30px;
+}
+
+.lista-iconos li:hover { /*Seudoclase (:), el hover sirve para que el mouse interactue con ese elemento*/ 
+    transform: scale(1.4);
+}
+
+.facebook a:hover { /*El hover afecta al li. Haciendo que el a cambie de color.*/
+    color: blue;
+}
+
+.youtube a:hover { /*El hover afecta al li. Haciendo que el a cambie de color.*/
+    color: red;
+}
+
+.instagram a:hover { /*El hover afecta al li. Haciendo que el a cambie de color.*/
+    color: #FF10A4;
+}
+
+.whatsapp a:hover { /*El hover afecta al li. Haciendo que el a cambie de color.*/
+    color: #1FD316;
+}
